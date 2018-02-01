@@ -20,6 +20,7 @@ import fcul.css.desporges.facade.startup.DesporGes;
  * @author tl
  */
 public class SimpleClient {
+   
 
     private SportEventServices ses;
     private RefereeServices rs;
@@ -29,6 +30,7 @@ public class SimpleClient {
     public SimpleClient(SportEventServices ses, RefereeServices rs) {
         this.ses = ses;
         this.rs = rs;
+        
     }
     
     
@@ -38,7 +40,7 @@ public class SimpleClient {
      * @param args Command line parameters
      */
     public static void main(String[] args) {
-
+	System.out.println("Teste 1");
         // Connects to the database
         DesporGes app = new DesporGes();
         try {
